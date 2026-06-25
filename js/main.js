@@ -109,4 +109,14 @@
   // Footer year
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
+
+  // Re-align to #hash after images/layout settle (lazy-load can shift anchors)
+  function realignHash() {
+    if (location.hash.length > 1) {
+      var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (t) t.scrollIntoView();
+    }
+  }
+  window.addEventListener("load", realignHash);
+  setTimeout(realignHash, 600);
 })();

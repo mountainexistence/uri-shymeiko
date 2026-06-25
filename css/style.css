@@ -141,9 +141,10 @@ h1,h2,h3{font-weight:300;letter-spacing:-.02em;line-height:1.1}
 .footer{border-top:1px solid var(--line);padding:40px 0}
 .footer .container{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .footer img{height:30px}
-.footer .f-links{display:flex;gap:24px}
-.footer .f-links a{color:var(--muted);font-size:.9rem;transition:color .2s}
-.footer .f-links a:hover{color:var(--accent)}
+.footer .f-links{display:flex;gap:18px;align-items:center}
+.footer .f-links a{color:var(--muted);display:inline-flex;transition:color .25s var(--ease),transform .25s var(--ease)}
+.footer .f-links a:hover{color:var(--accent);transform:translateY(-2px)}
+.footer .f-links svg{width:21px;height:21px;display:block}
 .footer .copy{color:var(--faint);font-size:.85rem}
 
 /* ---------- Lightbox ---------- */

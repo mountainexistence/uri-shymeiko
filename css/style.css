@@ -81,7 +81,7 @@ h1,h2,h3{font-weight:300;letter-spacing:-.02em;line-height:1.1}
 .stat .lbl{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-top:8px}
 
 /* ---------- Portfolio (masonry) ---------- */
-.cat{margin-bottom:84px}
+.cat{margin-bottom:84px;scroll-margin-top:96px}
 .cat:last-child{margin-bottom:0}
 .cat-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
 .cat-head h3{font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--ink)}
